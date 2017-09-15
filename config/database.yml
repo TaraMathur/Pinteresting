@@ -20,6 +20,16 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+#production:
+#  <<: *default
+#  database: db/production.sqlite3
+
 production:
-  <<: *default
-  database: db/production.sqlite3
+#  <<: *default
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  adapter: postgresql
+  database: <pinteresting_production>
+  username: <pinteresting>
+  password: <%= ENV['PINTERESTING_DATABASE_PASSWORD'] %>
+
