@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-#ruby '2.3.4'
+ruby '2.4.0'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass'
 gem 'devise', '~> 4.3.0'
+gem 'paperclip'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
