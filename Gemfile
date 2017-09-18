@@ -34,7 +34,12 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass'
 gem 'devise', '~> 4.3.0'
-gem 'paperclip'
+gem 'paperclip', '~> 4.2'
+gem 'nokogiri'
+gem 'aws-sdk', '~> 3.0.1'
+gem 'masonry-rails', '~> 0.2.4'
+gem 'jquery'
+gem 'jquery-turbolinks'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
