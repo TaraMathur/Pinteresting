@@ -40,6 +40,8 @@ gem 'aws-sdk', '~> 3.0.1'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'jquery'
 gem 'jquery-turbolinks'
+gem 'will_paginate', '~> 3.1.6'
+gem 'will_paginate-bootstrap','~> 1.0.1 '
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
