@@ -17,7 +17,9 @@
      
       <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
-        <li><%= link_to 'New Pin', new_pin_path %></li>
+        <li><%=link_to new_pin_path do %>
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Pin
+        <% end %>
       <% end %>
         <li><%=link_to "Home", root_path %></li>
         <li><%=link_to "About", pages_about_path %></li>
